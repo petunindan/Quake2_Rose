@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "game", "game.vcxproj", "{6C8ACF1A-748C-417B-8600-1859492BCC2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug Alpha|Win32 = Debug Alpha|Win32
+		Debug|Win32 = Debug|Win32
+		Release Alpha|Win32 = Release Alpha|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6C8ACF1A-748C-417B-8600-1859492BCC2F}.Debug Alpha|Win32.ActiveCfg = Debug Alpha|Win32
+		{6C8ACF1A-748C-417B-8600-1859492BCC2F}.Debug Alpha|Win32.Build.0 = Debug Alpha|Win32
+		{6C8ACF1A-748C-417B-8600-1859492BCC2F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6C8ACF1A-748C-417B-8600-1859492BCC2F}.Debug|Win32.Build.0 = Debug|Win32
+		{6C8ACF1A-748C-417B-8600-1859492BCC2F}.Release Alpha|Win32.ActiveCfg = Release Alpha|Win32
+		{6C8ACF1A-748C-417B-8600-1859492BCC2F}.Release Alpha|Win32.Build.0 = Release Alpha|Win32
+		{6C8ACF1A-748C-417B-8600-1859492BCC2F}.Release|Win32.ActiveCfg = Release|Win32
+		{6C8ACF1A-748C-417B-8600-1859492BCC2F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77D8A02C-B2D1-453A-BD3E-5509F28362E7}
+	EndGlobalSection
+EndGlobal

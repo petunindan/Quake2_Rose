@@ -1,0 +1,127 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(519,5): warning MSB8028: промежуточный каталог (.\release\) содержит файлы, которые используются совместно с другим проектом (kmq2game.vcxproj).  Это может привести к ошибкам очистки и перестроения.
+  dm_ball.c
+  dm_tag.c
+  grenade.c
+  g_ai.c
+  g_camera.c
+  g_chase.c
+  g_cmds.c
+  g_combat.c
+  g_crane.c
+  g_fog.c
+  g_func.c
+  g_items.c
+  g_jetpack.c
+  g_lights.c
+  g_lock.c
+  g_main.c
+  g_mappack.c
+  g_misc.c
+E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\g_misc.c(2296,32): warning C4113: "void (__cdecl *)(edict_t *)" отличается в списках параметров от "void (__cdecl *)(edict_t *,edict_t *,edict_t *,int,vec_t *)"
+  g_monster.c
+  g_newai.c
+  Создание кода...
+E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\g_misc.c(2257): warning C4700: использована неинициализированная локальная переменная "damage"
+  Компиляция...
+  g_newdm.c
+  g_newfnc.c
+  g_newtarg.c
+  g_newtrig.c
+  g_newutils.c
+  g_newweap.c
+  g_patchplayermodels.c
+  g_pendulum.c
+  g_phys.c
+  g_save.c
+  g_sound.c
+  g_spawn.c
+  g_sphere.c
+  g_svcmds.c
+  g_target.c
+  g_thing.c
+  g_tracktrain.c
+  g_trigger.c
+  g_turret.c
+  g_utils.c
+  Создание кода...
+  Компиляция...
+  g_vehicle.c
+  g_weapon.c
+  km_cvar.c
+  m_actor.c
+  m_actor_weap.c
+  m_berserk.c
+  m_boss2.c
+  m_boss3.c
+  m_boss31.c
+  m_boss32.c
+  m_boss5.c
+  m_brain.c
+  m_brainbeta.c
+  m_carrier.c
+  m_chick.c
+  m_dog.c
+  m_fixbot.c
+  m_flash.c
+  m_flipper.c
+  m_float.c
+  Создание кода...
+  Компиляция...
+  m_flyer.c
+E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\m_flyer.c(523,65): warning C4020: monster_fire_railgun: слишком много фактических параметров
+E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\m_flyer.c(540,25): warning C4047: функция: "int" отличается по уровням косвенного обращения от "void *"
+E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\m_flyer.c(540,21): warning C4024: hornet_fire: различные типы для формального и фактического параметров 2
+E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\m_flyer.c(843,47): warning C4047: функция: "int" отличается по уровням косвенного обращения от "void *"
+E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\m_flyer.c(843,43): warning C4024: T_RadiusDamage: различные типы для формального и фактического параметров 6
+E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\m_flyer.c(998,43): warning C4133: =: несовместимые типы - из "int (__cdecl *)(edict_t *,float)" в "qboolean (__cdecl *)(edict_t *,float)"
+E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\m_flyer.c(1075,43): warning C4133: =: несовместимые типы - из "int (__cdecl *)(edict_t *,float)" в "qboolean (__cdecl *)(edict_t *,float)"
+E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\m_flyer.c(1221,43): warning C4133: =: несовместимые типы - из "int (__cdecl *)(edict_t *,float)" в "qboolean (__cdecl *)(edict_t *,float)"
+  m_gekk.c
+  m_gladb.c
+  m_gladiator.c
+  m_gunner.c
+E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\m_gunner.c(858,28): warning C4047: =: "int" отличается по уровням косвенного обращения от "void *"
+E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\m_gunner.c(899,28): warning C4047: =: "int" отличается по уровням косвенного обращения от "void *"
+E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\m_gunner.c(2424,71): warning C4047: =: "mmove_t *" отличается по уровням косвенного обращения от "mframe_t (*)[3]"
+E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\m_gunner.c(2588,71): warning C4047: =: "mmove_t *" отличается по уровням косвенного обращения от "mframe_t (*)[3]"
+E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\m_gunner.c(3041,49): warning C4047: ==: "mmove_t *" отличается по уровням косвенного обращения от "void (__cdecl *)(edict_t *)"
+  m_hover.c
+  m_infantry.c
+  m_insane.c
+  m_medic.c
+  m_move.c
+  m_mutant.c
+  m_parasite.c
+  m_soldier.c
+  m_stalker.c
+  m_supertank.c
+E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\m_supertank.c(841,18): warning C4047: =: "edict_t *" отличается по уровням косвенного обращения от "int"
+E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\m_supertank.c(844,22): warning C4047: =: "edict_t *" отличается по уровням косвенного обращения от "int"
+  m_tank.c
+E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\m_tank.c(691,45): warning C4020: fire_tadplasma: слишком много фактических параметров
+E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\m_tank.c(707,46): warning C4020: fire_tadplasma: слишком много фактических параметров
+E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\m_tank.c(725,45): warning C4020: fire_tadplasma: слишком много фактических параметров
+E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\m_tank.c(1008,102): warning C4047: инициализация: "mframe_t *" отличается по уровням косвенного обращения от "void (__cdecl *)(edict_t *)"
+  m_turret.c
+  m_widow.c
+  m_widow2.c
+  p_chasecam.c
+  Создание кода...
+  Компиляция...
+  p_client.c
+  p_hud.c
+  p_menu.c
+  p_text.c
+  p_trail.c
+  p_view.c
+  p_weapon.c
+E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\p_weapon.c(2807,81): warning C4113: "void (__cdecl *)(edict_t *)" отличается в списках параметров от "void (__cdecl *)(edict_t *,qboolean)"
+E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\p_weapon.c(2809,82): warning C4113: "void (__cdecl *)(edict_t *)" отличается в списках параметров от "void (__cdecl *)(edict_t *,qboolean)"
+  q_shared.c
+  z_anim.c
+  z_sentien.c
+  Создание кода...
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1369,5): warning MSB8012: TargetPath(E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\release\game.dll) не соответствует значению свойства выходного файла (E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\kmq2gamex86.dll) для Linker. Это может привести к неправильной сборке проекта. Чтобы исправить это, убедитесь, что значения свойств $(OutDir), $(TargetName) и $(TargetExt) соответствуют значению, указанному в %(Link.OutputFile).
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1371,5): warning MSB8012: TargetName(game) не соответствует значению свойства выходного файла (kmq2gamex86) для Linker. Это может привести к неправильной сборке проекта. Чтобы исправить это, убедитесь, что значения свойств $(OutDir), $(TargetName) и $(TargetExt) соответствуют значению, указанному в %(Link.OutputFile).
+     Создается библиотека .\release/gamex86.lib и объект .\release/gamex86.exp
+  game.vcxproj -> E:\Games\Steam\steamapps\common\Quake 2\tad\src_kmq2\release\game.dll
