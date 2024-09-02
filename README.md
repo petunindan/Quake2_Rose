@@ -85,7 +85,7 @@ The final boss. Armed with rockets, grenades, a blaster, and a machine gun, they
 ### Boss-Traitor
 There were problems with using human DNA - the clones were too cunning and rose to the top of the Strogg hierarchy, seizing power. He is also a scientific genius, using Strogg technology to its full potential. He uses a personal cloaking device as well as a whole arsenal of weapons.
 
-## The main differences between the KMQ2 port and the original mod ***
+## The main differences between the KMQ2 port and the original mod
 Air Force Blaster - no different from the original.  
 Feedback Laser - identical to the original except that the original authors managed to untie the firing mechanics from the weapon model animation, I couldn't do it and had to change the weapon model to the new code.  
 Plasma Cannon - identical to the original + ammunition.  
@@ -103,8 +103,8 @@ In one of the missions there is a task to destroy several monsters, including a 
 DNA Scanner - The only thing I couldn't do. There are "trigger_dna" on the map and they are activated only when the player has "DNA Scanner" in his inventory. No matter how I tried to do it, nothing worked. The main problem was finding the code for checking the player's inventory - there are simply no examples, and all attempts to write something myself caused the game to crash. Therefore, I had to make it so that the triggers were activated without a scanner.  
 The final riddle with numbers is a tough nut to crack, but I cracked it, unlike the previous one. As I understand it, in the original, the developers used some kind of system involving a trigger, but I did it my way, and it seems to work.
 
-*** Authors ***
+## Authors
 Mod developers - Roseville Missions Team. Webarchive link: https://web.archive.org/web/20210927070110/https://www.quakewiki.net/archives/roseville/  
 Adaptation for KMQuake2 - Petunindan  
-All original documentation for mods is in the “rose_docs” folder.
+All original mod documentation is in the “rose_docs” folder.
 
