@@ -1,0 +1,1 @@
+.\kmquake2.exe +set game rose

@@ -1,0 +1,298 @@
+<body bgcolor="#ecdcc2">
+<BODY BACKGROUND="./readmepics/1bg_box.jpg">
+
+<font color="#271103" size="4"><h1>Quake 2: Window of Retaliation, The Armageddon Device - KMQuake 2 port.</h1></font>
+
+<font color="#271103" size="4"><h2>*** Introduction ***</h2></font>
+
+<font color="#271103" size="4" size="4">
+<p>
+I always loved addons from these authors and always wanted to re-run them on an engine with improved graphics (for example, on KMQuake 2), however, the authors did not publish the mod sources, so I took the liberty of recreating the content contained in gamex86.dll from scratch (and namely weapons, monsters and some scripts.). More than a week of hard work - and the result is an almost complete copy (with the exception of some differences, about which a little later). 
+</p>
+
+<p>
+Link to the original page of the mods authors (archive): <a href="https://web.archive.org/web/20210927070110/https://www.quakewiki.net/archives/roseville/">web.archive.org...</a>
+</p>
+
+</font>
+
+<font color="#271103" size="4"><h2>*** About KMQuake2 port ***</h2></font>
+
+<font color="#271103" size="4" size="4">
+<p>
+Since the sources of these mods are not publicly available on the network, I had to do everything myself. Before that, I was not familiar with C ++, so it was very difficult, but the manuals for <a href="https://grandbiz.ru/?p=1546">Quake 2 game.dll</a> helped. Monster's parameters (damage, health, etc.) calculated "by eye", for example, the number of shots from a blaster to shoot down a shield and the like. I marked all the new code with my name (petunindan) to make it easier to find new lines if you suddenly want to fix something. The easiest way to do this is with Notepad ++: turn on file search, select the src_kmq2 folder and search for “petunindan”. For compilation, I used the latest version of Visual Studio for June 2021. In total, it took over a week to write all this. I sincerely hope that the authors of the original will not be angry about all this copying without asking. Otherwise, I'll hide the article. Read the general description of the new code and the main differences from the original at the end of the text.
+</p>
+
+<p>
+I adapted mods for KMQuake 2 - I drew icons for new weapons and items. Multiplayer not tested. All new materials are packed in .pk3 so that the old version for regular Quake 2 won't read them. The original mission packs code was taken as a basis, which also introduced a new, smarter AI than in the original.
+<br/>
+Since I did not find a way to assign several weapons to one key, I decided to assign a new weapon to other buttons. Default:
+<br/>
+V – proximity grenades. Or “bind V use proximity grenades”.
+<br/>
+N – feedback laser. Or “bind N use feedback laser”.
+<br/>
+M – plasma gun. “bind M use plasma gun”.
+<br/><br/>
+</p>
+
+</font>
+
+<font color="#271103" size="4"><h2>*** Original addons description ***</h2></font>
+
+<font color="#271103" size="4" size="4">
+
+<p>
+<strong>Window Of Retaliation</strong> -  addon for Quake 2, containing 9 levels.
+<br/>
+The action takes place after the defeat of Macron. You play the role of a pilot on a search and destroy mission, clearing out the remnants of Strogg's forces.
+<br/>
+While on a routine mission, you are shot down on a distant planet owned by Strogg and discover that they are planning a revenge strike. You must figure out the nature of this strike and stop it before the Earth is destroyed.
+<br/>
+Window of Retaliation introduces new weapons and monsters to the standard Quake 2 set.
+</p>
+
+<p><img src="./readmepics/q7sml.jpg" alt="MegaTF" width="267"></p>
+<p><img src="./readmepics/quake03.jpg" alt="MegaTF" width="320"></p>
+
+<p>
+<strong>The Armageddon Device</strong> - addon for Quake 2, containing 8 levels.
+</p>
+
+<p>
+An asteroid about half the size of a moon is heading toward Earth. When he hits, all life on Earth will be destroyed. This is no ordinary piece of planetary junk. This stone has a primitive thermonuclear drive and the most powerful shield we have ever seen. This weapon is Strogg's last hope of victory, codenamed "The Armageddon Device".
+</br>
+We received this information when a ship from Earth intercepted the Strogg shuttle en route to an asteroid.
+</br>
+The shield is generated and controlled from the reactor on the rock itself. None of Strogg knows the deactivation code. There are three Strogg commanders, each of them knows two digits of the six-digit code. We do not expect them to voluntarily tell us.
+</p>
+
+<p><img src="./readmepics/n_astS.jpg" alt="MegaTF" width="320"></p>
+
+<p>
+You act as an elite marine with the task of obtaining deactivation codes for the device.
+</br>
+Action plan:
+</br>
+1) You will be taken to the estimated location of the start of the asteroid. There is an M-class planet in those places, and we expect to find the Strogg colony there.
+</br>
+2) Your captain will scan the area to find a suitable stealth landing spot.
+</br>
+3) You will lead a team of 4 and try to get a deactivation code from the Strogg commanders. Your battle computer has been adapted to read Strogg cerebral implants and extract the code. This cannot be done while the implant owner is alive.
+</br>
+4) When you find the code, you need to find a way to get to the asteroid and disable the shield.
+</br>
+5) Our warship will destroy the rock with thermonuclear charges.
+</br>
+Good luck, soldier!
+</p>
+
+<p><img src="./readmepics/shuttleL.jpg" alt="MegaTF" width="720"></p>
+
+<p>
+<strong>The Earth War</strong> - addon for The Armageddon Device, containing 9 new levels. The missions created by Forrest “Gumpsta” Glithero take place on the ground during the Strogg invasion. Exciting action, enemies and weapons from previous expansions. To run this addon, start “The Armageddon Device”, start a new game and select the difficulty. After loading the game, open your console and write “map park”, this command will take you to the beginning of the “The Earth War” campaign.
+</p>
+
+</font>
+
+<font color="#271103" size="4"><h3><em><strong>* Weapons *</strong></em></h2></font>
+
+<font color="#271103" size="4" size="4">
+
+<p>
+<strong>
+Air Forces Blaster
+</strong>
+<br/><br/>
+Pilots are given a slightly more powerful version of the standard blaster. Fires two charges per shot in quick succession.
+</p>
+
+<p>
+<strong>
+Feedback Laser
+</strong>
+<br/><br/>
+Awesome weapon. Uses a modified railgun system to charge the high-power laser, but to increase power, the user can feed the outgoing pulse directly through the feedback of the charging chamber. Charging continues until the trigger is released, releasing a powerful beam that destroys everything in its path.
+<br/>
+A visible meter shows the charge level as a percentage.
+<br/>
+A 100% charge is approximately comparable to a BFG in terms of power.
+<br/>
+Attention! Exceeding 102% of the charge overloads the weapon, which can cause a big explosion! You've been warned, soldier!
+<br/>
+The weapon does not have a area damage, but it is highly accurate and fast, but requires precise aiming and charge control from the shooter.
+</p>
+
+<p><img src="./readmepics/laser1.jpg" alt="MegaTF" width="600"></p>
+
+<p>
+<strong>
+Plasma Gun
+</strong>
+<br/><br/>
+This weapon automatically fires charges of superheated gas. The charges have a small area of effect and are very effective in automatic fire.
+<br/>
+Thanks to the Loki's Missions team for their kind permission to use their plasma cannon model.
+</p>
+
+<p><img src="./readmepics/plasLarge.jpg" alt="MegaTF" width="720"></p>
+
+<p>
+<strong>
+Proximity Grenades
+</strong>
+<br/><br/>
+Available for throwing only and cannot be used with a grenade launcher. Fired when an enemy is nearby. Contact grenades can be distinguished from conventional grenades by a yellow marking strip.
+</p>
+
+
+</font>
+
+<font color="#271103" size="4"><h3><em><strong>* Monsters *</strong></em></h2></font>
+
+<font color="#271103" size="4" size="4">
+
+<p>
+<strong>
+Soldier Stormtrooper
+</strong>
+<br/>
+He is the elite guard of the Strogg vengeance force. Armed with a powerful screen shield and a machine gun can be a serious opponent.
+</p>
+
+<p><img src="./readmepics/stormtr.jpg" alt="MegaTF" width="72"></p>
+
+<p>
+<strong>
+Hornet Class Flyer
+</strong>
+<br/>
+An experimental modification of the "Flyer" monster. Strogg attempted to mount a rail gun and shield generator on a frame that was already overloaded.
+<br/>
+Deadly in surprise attacks, especially when hiding in a swarm of regular Flyers. It has one drawback: the generator supplying the shield cannot be properly cooled on such a large frame. Overload it and it will explode. As a result, the sparkling and smoking hornet becomes an easy target.
+</p>
+
+<p><img src="./readmepics/hornet.jpg" alt="MegaTF" width="184"></p>
+
+<p>
+<strong>
+Proxy-Parasite
+</strong>
+<br/>
+A parasite with the habit of throwing contact mines. Look where you are going!
+</p>
+
+<p>
+<strong>
+Traitors
+</strong>
+<br/>
+People who went over to the Strogg side. They are armed with machine guns and usually keep in groups.
+</p>
+
+<p><img src="./readmepics/traitors.jpg" alt="MegaTF" width="400"></p>
+
+<p>
+<strong>
+Laser Gladiator
+</strong>
+<br/>
+Deadly enemy. Heavily shielded, fast and armed with a feedback laser. Beware!
+</p>
+
+<p>
+<strong>
+Tank-General
+</strong>
+<br/>
+Top of the tank hierarchy. These guys are slow, but well armed and armored. Especially problematic in groups!
+</p>
+
+<p>
+<strong>
+Death Tank
+</strong>
+<br/>
+Faster and more aggressive than their fellows. Armed with a plasma cannon and a pulse laser, they won't give you the right to make a mistake! Easily recognizable by the skull and bones mark.
+</p>
+
+<p>
+<strong>
+Hyper-Tank
+</strong>
+<br/>
+Final boss. Armed with rockets, grenades, blaster and machine gun, uses BFG when things go really bad.
+</p>
+
+<p>
+<strong>
+Traitor-Boss
+</strong>
+<br/>
+With the use of human DNA, problems arose - the clones were too cunning and rose to the top of the Strogg hierarchy, seizing power. He is also a scientific genius, using Strogg technology to its fullest. Uses a personal cloaking device as well as an arsenal of weapons.
+</p>
+
+</font>
+
+<font color="#271103" size="4"><h2>*** The main differences of the KMQ2 port from the original ***</h2></font>
+
+<font color="#271103" size="4" size="4">
+
+<p>
+Air Forces Blaster - no different from the original. 
+<br/>
+Feedback Laser – identical to the original, except that the authors of the original managed to decouple the mechanics of the shot from the animation of the weapon model, I didn't succeed and I had to change the weapon model for a new code.
+<br/>
+Plasma Gun - identical to the original + ammo.
+<br/>
+Hyperblaster – as in TaD, a green tracer is fired every few shots.
+<br/>
+Proximity Grenades – in the original, ordinary grenades were used, but the clockwork was replaced by logic: "The enemy approached - the mine exploded, the ally approached - the mine does not explode." I also tried to do this, but it did not work, so I used the logic of the proxy grenades from the "Ground Zero" addon.
+<br/>
+Soldier Stormtrooper – identical to the original.
+<br/>
+Hornet Class Flyer – identical to the original.
+<br/>
+Proxy-Parasite – the original threw proxy mines next to it. Due to the change in the logic of the proxy grenades, now it throws a mine towards the player, but the “grenade” flag allows monsters to evade their mines and not step on them.
+<br/>
+Traitors – identical to the originals, except for some minor differences. And yes, my code is a huge jumble for them, please don't laugh :D . But it works! Unless the boss can sometimes forget to turn the shield on / off.
+<br/>
+Laser gladiator – identical to the original.
+<br/>
+Tank-General – identical to the original. 
+<br/>
+Death Tank – identical to the original. 
+<br/>
+Hyper-Tank – identical to the original. The weapon code was spied on in <a href="https://grandbiz.ru/?p=80">StroggDM.</a>
+<br/>
+In one of the missions there is a task to destroy several monsters, including a tank sitting in a chair. I struggled with this problem for a long time, he stubbornly refused to be counted, but suddenly I added something and he began to be counted. What I added - I myself did not understand, but did not touch it and closed the file without breathing.
+<br/>
+DNA Scanner - The only thing I couldn't do. There are “trigger_dna” on the map and they are only activated when the player has a “DNA Scanner” in his inventory. As soon as I didn't try to do it, nothing worked. The main problem was to find the code for checking the player's inventory - there are simply no examples, and all attempts to write something myself caused the game to crash. Therefore, I had to make sure that the triggers were activated in any case.
+<br/>
+The final riddle with numbers is still a tough nut to crack, but I saw through it, unlike the previous one. As I understand it, in the original, the developers used some kind of system involving a trigger, but I did it my own way, it seems to work.
+<br/>
+</p>
+</font>
+
+<font color="#271103" size="4"><h2>*** Authirs ***</h2></font>
+
+<font color="#271103" size="4" size="4">
+
+<p>
+Mod Developers – <a href="https://web.archive.org/web/20210927070110/https://www.quakewiki.net/archives/roseville/">Roseville Missions Team.</a>
+</p>
+
+<p>
+KMQuake2 adaptation - <a href="https://grandbiz.ru/">Petunindan</a>
+</p>
+
+<p>
+All original mod documentation is in the “rose_docs” folder.
+</p>
+
+<p><img src="./readmepics/kmquake2_000.webp" alt="MegaTF" width="720"></p>
+
+<p><img src="./readmepics/kmquake2_002.webp" alt="MegaTF" width="720"></p>
+
+</font>
+
